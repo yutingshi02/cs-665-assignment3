@@ -1,29 +1,27 @@
 
 | CS-665       | Software Design & Patterns |
 |--------------|----------------------------|
-| Name         | FIRST_NAME LAST_NAME       |
-| Date         | MM/DD/YYYY                 |
-| Course       | Fall / Spring / Summer     |
-| Assignment # |                            |
+| Name         | Yuting Shi    |
+| Date         | 03/26/2026                 |
+| Course       | Spring  |
+| Assignment # |     3                       |
 
 # Assignment Overview
-Please add a paragraph or two overviewing the objectives of the assignment.
+A custom email application that can automatically generate emails based on a template to each type of customer (Business, Returning, Frequent, New, VIP). 
 
 # GitHub Repository Link:
-https://github.com/{YOUR_USERNAME}/cs-665-assignment-{ASSIGNMENT_NUMBER}
+https://github.com/yutingshi02/cs-665-assignment3
 
 # Implementation Description 
+I am going to use the Decorator pattern. 
 
 
 For each assignment, please answer the following:
 
-- Explain the level of flexibility in your implementation, including how new object types can
-be easily added or removed in the future.
-- Discuss the simplicity and understandability of your implementation, ensuring that it is
-easy for others to read and maintain.
+- Explain the level of flexibility in your implementation, including how new object types can be easily added or removed in the future.
+- Discuss the simplicity and understandability of your implementation, ensuring that it is easy for others to read and maintain.
 - Describe how you have avoided duplicated code and why it is important.
-- If applicable, mention any design patterns you have used and explain why they were
-chosen.
+- If applicable, mention any design patterns you have used and explain why they were chosen.
 
 
 # Maven Commands
