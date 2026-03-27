@@ -7,22 +7,25 @@
 | Assignment # |     3                       |
 
 # Assignment Overview
-A custom email application that can automatically generate emails based on a template to each type of customer (Business, Returning, Frequent, New, VIP). 
+A custom email application that can automatically generate emails based on a template to each type of customer (Business, Returning, Frequent, New, VIP). Each email starts from the same base template but is then customized depending on the type of customer.
 
 # GitHub Repository Link:
 https://github.com/yutingshi02/cs-665-assignment3
 
 # Implementation Description 
-I am going to use the Decorator pattern. 
+I am going to use the Decorator pattern. I chose Decorator because all of the emails share the same basic template but each customer type is slightly customized to have an extra message. The decorators add the extra part. 
 
 
 For each assignment, please answer the following:
 
 - Explain the level of flexibility in your implementation, including how new object types can be easily added or removed in the future.
+This implementation is flexible because it is easy to add or remove customer types in the future. If a new customer segment is needed I can add a new customer class and a new email decorator for that type without changing the overall structure of the program. If a customer type is no longer needed it can be removed without affecting the rest of the shared email logic.
 - Discuss the simplicity and understandability of your implementation, ensuring that it is easy for others to read and maintain.
+I tried to keep the implementation simple and easy to understand.  The customer classes represent the different customer types, the email classes handle the shared template and customizations, and the service class generates the final email. 
 - Describe how you have avoided duplicated code and why it is important.
+I avoided duplicated code by putting the shared email text in one base class instead of repeating it in every email type. That is important because repeated code makes programs harder to update and easier to break. With this design, if I want to change the common part of the email, I only have to change it once.
 - If applicable, mention any design patterns you have used and explain why they were chosen.
-
+The main design pattern used in this project is the Decorator pattern. I chose it because the assignment says the emails should be generated from a base template and then tailored for each type of customer. Decorator fits that idea well since it starts with one shared email template and adds extra customer-specific text depending on the customer type.
 
 # Maven Commands
 
